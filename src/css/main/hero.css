@@ -1,0 +1,36 @@
+.hero-section {
+  background: url('./../../assets/images/background.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+  width: 100%;
+}
+
+.hero-section h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #FFD700;
+}
+
+.hero-section p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.hero-section .btn {
+  background-color: #FFD700;
+  color: #000;
+  font-size: 20px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.hero-section .btn:hover {
+  background-color: #fff;
+  color: #000;
+}

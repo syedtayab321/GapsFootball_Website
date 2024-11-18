@@ -1,0 +1,11 @@
+.top-bar {
+  background-color: #FFD700;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.top-bar a {
+  color: #000;
+  font-weight: bold;
+}

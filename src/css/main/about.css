@@ -1,0 +1,89 @@
+.about-page {
+  width: 100%;
+  color: #333;
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+.about-page .hero-section {
+  background: linear-gradient(to right, #fff, #ffd700);
+  color: #333;
+  width: 100%;
+  height: 60vh;
+}
+
+.about-page .hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  animation: slide-in 1s ease-in-out;
+}
+
+.about-page .hero-subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #666;
+}
+.about-page .section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+.about-page .section-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+}
+.about-page .img-fluid {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #ffd700;
+  animation: fade-in 1.5s ease-in-out;
+}
+
+.about-page .shadow-lg {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.about-page .mission-section,
+.about-page .team-section {
+  padding: 50px 0;
+}
+@media (max-width: 768px) {
+  .about-page .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .about-page .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-page .section-title {
+    font-size: 1.8rem;
+  }
+
+  .about-page .section-text {
+    font-size: 1rem;
+  }
+}
