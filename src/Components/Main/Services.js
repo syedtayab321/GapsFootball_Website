@@ -84,6 +84,7 @@ const Services = () => {
 
   return (
     <div className="services-page">
+      {/* Hero Section */}
       <section className="services-hero text-center py-5 bg-light">
         <h1 className="hero-title display-4">Our Services</h1>
         <p className="hero-subtitle text-muted">
@@ -109,10 +110,10 @@ const Services = () => {
               />
             </div>
             <div className="col-md-6 text-md-start text-center p-4">
-              <h5 className="service-title text-primary">{service.title}</h5>
+              <h5 className="service-title text-warning">{service.title}</h5>
               <p className="service-description">{service.description}</p>
               <button
-                className="btn btn-primary mt-3"
+                className="btn btn-warning mt-3"
                 data-bs-toggle="modal"
                 data-bs-target="#serviceModal"
                 onClick={() => handleServiceSelection(service)}
@@ -123,7 +124,6 @@ const Services = () => {
           </div>
         ))}
       </section>
-
       {selectedService && (
         <ModalForm
           service={selectedService}

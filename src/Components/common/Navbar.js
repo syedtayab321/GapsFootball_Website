@@ -1,11 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import './../../css/common/navbar.css';
 import logo from './../../assets/images/logo.png';
+import LoginSignupModal from "../Modals/AuthModal";
 
 const Navbar = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
   return (
-    <nav className="navbar navbar-expand-lg bg-light shadow-sm sticky-top">
+    <>
+      {isModalOpen && <LoginSignupModal onClose={() => setModalOpen(false)} />}
+      <nav className="navbar navbar-expand-lg bg-light shadow-sm">
       <div className="container">
         <Link className="navbar-brand d-flex align-items-center" to="/">
           <img
@@ -50,12 +54,12 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="d-flex ms-3">
-            <button className="btn btn-outline-primary me-2">Login</button>
-            <button className="btn btn-primary">Sign Up</button>
+            <button className="btn btn-outline-primary me-2" onClick={() => setModalOpen(true)}>Login/SignUp</button>
           </div>
         </div>
       </div>
     </nav>
+    </>
   );
 };
 
